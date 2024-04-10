@@ -2,6 +2,39 @@
 {{ 'custom-product.css' | asset_url | stylesheet_tag }}
 
 
+{% style %}
+
+.custiom-section-bg-container{
+
+background-color: hsla(0, 0%, 0%, 1);
+min-height: 100vh;
+padding: 40px 20px;
+}
+.heading{
+
+color: hsla(0, 0%, 100%, 1);
+size: 48px;
+
+}
+.custom-product-content-alignment{
+display: flex;
+justify-content: center;
+align-items:center ;
+width: 90%;
+max-height: 400px;
+}
+.image-container{
+width: 50%;
+
+}
+*{
+color: #fff;
+}
+
+
+{% endstyle %}
+
+
 <div class="custiom-section-bg-container">
     <h1 clas="heading"> Our Products </h1>
     <div class="custom-product-content-alignment">
