@@ -41,7 +41,24 @@
   {% schema %}
   {
     "name": "FAQ",
-    "settings": [],
+    "settings": [
+     {
+        "type": "text",
+        "id" : "heading",
+        "label": "Enter Section Heading"
+    },
+    {
+       "type": "color",
+       "id": "text-color",
+       "label": "Color of Heading"
+    },
+    {
+      "type": "color_background",
+      "id": "background-color",
+      "label": "Background-color"
+    }
+
+    ],
     "blocks": [
       {
         "type": "category",
