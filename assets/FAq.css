@@ -16,6 +16,10 @@
     max-width: 90%;
     margin: 0 auto;
     width: calc(100% - 40px);
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .faq-page-header {
