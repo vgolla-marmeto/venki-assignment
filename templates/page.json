@@ -138,11 +138,20 @@
         "text-color": "",
         "background-color": ""
       }
+    },
+    "custom_product_section_XrPtYg": {
+      "type": "custom-product-section",
+      "settings": {
+        "heading": "Our Products",
+        "sec-product": "",
+        "color_background": "black"
+      }
     }
   },
   "order": [
     "featured_product_6Em8HJ",
     "main",
-    "custom_faq_section_7EXL38"
+    "custom_faq_section_7EXL38",
+    "custom_product_section_XrPtYg"
   ]
 }
