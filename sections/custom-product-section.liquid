@@ -81,7 +81,9 @@ font-size:16px;
 
 
 <div class="custiom-section-bg-container">
-    <h1 class="custom-heading"> Our Products </h1>
+    <div>
+    <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
+    <div>
     <div class="custom-product-content-alignment">
         <div class="image-container">
             <img class="image-size" src={{ section.settings.image-section | image_url}} >
