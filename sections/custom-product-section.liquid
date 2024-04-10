@@ -23,6 +23,7 @@ flex-direction: column;
 justify-content: center;
 align-items:center ;
 width: 90%;
+gap:20px;
 }
 
 *{
@@ -45,11 +46,11 @@ font-size:16px;
 
 }
 .content-container{
-    width: 100%
+    width: 100%;
 }
 .image-container{
     width:100%;
-    background-image:radial-gradient(hsla(303, 90%, 35%, 1, ),hsla(0, 0%, 0%, 1))
+    background-image:radial-gradient(hsla(303, 90%, 35%, 1, ),hsla(0, 0%, 0%, 1));
 }
 .image-size{
     max-width:400px;
@@ -79,7 +80,7 @@ font-size:16px;
     <h1 class="custom-heading"> Our Products </h1>
     <div class="custom-product-content-alignment">
         <div class="image-container">
-            <img class="image-size" src={{ section.settings.image-section | image_url}}' >
+            <img class="image-size" src={{ section.settings.image-section | image_url}} >
         </div>
         <div class="content-container">
             <p class="custom-caption"> --- Cipla Health - Anti Dandruff Shampoo </p>
@@ -101,17 +102,162 @@ font-size:16px;
 
 
 
-
-
-
 {% schema %}
+
+{
+   "name": "Custom-Product-Section",
+   "tag": "section",
+   "class": "section",
+   "disabled_on": {
+    "groups": ["header", "footer"]
+               },
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Our Products",
+          "label": "Heading"
+        
+        },
+
+        {
+            "type": "product",
+            "label": "Product",
+            "id": "product-id"
+        
+        },
+        {
+          "type": "color_background",
+          "id": "background-color",
+          "label": "Background Color",
+          "default": "hsla(0, 0%, 0%, 1)"
+        
+        },
+        {
+            "type": "select",
+            "id": "media_position",
+            "options": [
+              {
+                "value": "left",
+                "label": "t:sections.featured-product.settings.media_position.options__1.label"
+              },
+              {
+                "value": "right",
+                "label": "t:sections.featured-product.settings.media_position.options__2.label"
+              }
+            ],
+            "default": "left",
+            "label": "t:sections.featured-product.settings.media_position.label",
+            "info": "t:sections.featured-product.settings.media_position.info"
+          },
+          {
+            "type": "image_picker",
+            "id": "image-section",
+            "label": "Upload a pic"
+           
+           }
+    ],
+    "blocks": [
+        {
+           "type": "text",
+           "name": "Text",
+           "limit": 1,
+           "settings": [
+            {
+               "type": "inline_richtext",
+               "id": "textId",
+               "label": "Enter text"
+            }
+           ]
+        },
+            {
+              "type": "textarea",
+              "name": "Description",
+              "settings": [
+                {   "type": "textarea",
+                    "id": "description",
+                    "label": "Product Description",
+                    "default": "Introducing Tugain Essentials Anti-Dandruff Shampoo, expertly curated with powerful actives to deliver an effective solution for your hair and scalp needs. Say goodbye to flakes and scalp irritation due to dandruff with a shampoo that truly cares for your hair."
+                }
+              ]
+             
+            },
+            {
+                "type": "button",
+                "name": "t:sections.rich-text.blocks.buttons.name",
+                "limit": 2,
+                "settings": [
+                  {
+                    "type": "text",
+                    "id": "button_label",
+                    "default": "Button label",
+                    "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+                    "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
+                  },
+                  {
+                    "type": "url",
+                    "id": "button_link",
+                    "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
+                  },
+                  {
+                    "type": "checkbox",
+                    "id": "button_style_secondary",
+                    "default": false,
+                    "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_1.label"
+                  },
+                  {
+                    "type": "text",
+                    "id": "button_label_2",
+                    "label": "t:sections.rich-text.blocks.buttons.settings.button_label_2.label",
+                    "info": "t:sections.rich-text.blocks.buttons.settings.button_label_2.info"
+                  },
+                  {
+                    "type": "url",
+                    "id": "button_link_2",
+                    "label": "t:sections.rich-text.blocks.buttons.settings.button_link_2.label"
+                  }
+                ]
+              }
+
+
+    ],
+    "presets": [
+        {
+        "name": "custom-product-section",
+        "blocks": [
+            {
+              "type": "text"
+            },
+            {
+             "type": "textarea"
+            },
+            {
+             "type": "button"
+            }
+        ]
+
+        
+        }
+        
+    ]
+    
+
+
+
+}
+
+
+
+{% endschema %}
+
+{% comment %} {% schema %}
 {
     "name": "Custom-product-section",
     "tag": "section",
     "class": "section",
     "disabled_on": {
       "groups": ["header", "footer"]
-    },
+                 },
     "settings": [
         {
            "type": "text",
@@ -122,15 +268,14 @@ font-size:16px;
         {
             "type": "product",
             "id": "sec-product",
-            "label": "t:sections.featured-product.settings.product.label"
+            "label": "Select-product"
           },
           {
             "type": "color_background",
             "id": "color_background",
             "label": "Background Color",
             "default": "black"
-          }
-          ,
+          },
           {
          "type": "image_picker",
          "id": "image-section",
@@ -138,7 +283,6 @@ font-size:16px;
         
         }
     ],
-        
     "presets": [
 
         {
@@ -156,7 +300,7 @@ font-size:16px;
 
 
 
-    
+    }
 
 
 
@@ -164,4 +308,4 @@ font-size:16px;
 
 
 
-{% endschema %}
+{% endschema %} {% endcomment %}
