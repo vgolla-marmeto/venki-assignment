@@ -6,7 +6,7 @@
         "text_7yQtaw": {
           "type": "text",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
+            "text": "--- Cipla Health - Anti Dandruff Shampoo",
             "text_style": "uppercase"
           }
         },
