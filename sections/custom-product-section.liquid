@@ -9,6 +9,9 @@
 background-color: hsla(0, 0%, 0%, 1);
 min-height: 100vh;
 padding: 40px 20px;
+display: "flex";
+
+justify-content: "center";
 }
 .custom-heading{
 
@@ -20,7 +23,7 @@ padding: 20px 0px;
 .custom-product-content-alignment{
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 align-items:center ;
 width: 90%;
 gap:20px;
@@ -168,9 +171,16 @@ font-size:16px;
                "type": "inline_richtext",
                "id": "textId",
                "label": "Enter text"
+            },
+            {
+              "type": "inline_richtext",
+              "id": "headwing",
+              "label": "Heading"
+            
             }
            ]
         },
+
             {
               "type": "textarea",
               "name": "Description",
