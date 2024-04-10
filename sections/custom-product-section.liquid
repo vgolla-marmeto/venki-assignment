@@ -59,7 +59,7 @@ hsla(0, 0%, 0%, 1);
     <h1 class="custom-heading"> Our Products </h1>
     <div class="custom-product-content-alignment">
         <div class="image-container">
-            <img class="image-size" src=" ">
+            <img class="image-size" src= {{ section.settings.image-section }}>
         </div>
         <div class="content-container">
             <p class="custom-caption"> --- Cipla Health - Anti Dandruff Shampoo </p>
@@ -110,6 +110,13 @@ hsla(0, 0%, 0%, 1);
             "label": "Background Color",
             "default": "black"
           }
+          ,
+          {
+         "type": "image_picker",
+         "id": "image-section",
+         "label": "Upload a pic"
+        
+        }
     ],
         
     "presets": [
