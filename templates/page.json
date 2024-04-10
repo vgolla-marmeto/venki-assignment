@@ -144,7 +144,8 @@
       "settings": {
         "heading": "Our Products",
         "sec-product": "tugain-essentials-anti-dandruff-shampo",
-        "color_background": "black"
+        "color_background": "black",
+        "image-section": "shopify:\/\/shop_images\/OurProduct11.png"
       }
     }
   },
