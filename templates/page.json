@@ -80,6 +80,15 @@
         "padding_bottom": 28
       }
     },
+    "custom_product_section_XrPtYg": {
+      "type": "custom-product-section",
+      "settings": {
+        "heading": "Our Products",
+        "sec-product": "tugain-essentials-anti-dandruff-shampo",
+        "color_background": "black",
+        "image-section": "shopify:\/\/shop_images\/OurProduct11.png"
+      }
+    },
     "custom_faq_section_7EXL38": {
       "type": "custom-faq-section",
       "blocks": {
@@ -139,21 +148,12 @@
         "text-color": "",
         "background-color": ""
       }
-    },
-    "custom_product_section_XrPtYg": {
-      "type": "custom-product-section",
-      "settings": {
-        "heading": "Our Products",
-        "sec-product": "tugain-essentials-anti-dandruff-shampo",
-        "color_background": "black",
-        "image-section": "shopify:\/\/shop_images\/OurProduct11.png"
-      }
     }
   },
   "order": [
     "featured_product_6Em8HJ",
     "main",
-    "custom_faq_section_7EXL38",
-    "custom_product_section_XrPtYg"
+    "custom_product_section_XrPtYg",
+    "custom_faq_section_7EXL38"
   ]
 }
