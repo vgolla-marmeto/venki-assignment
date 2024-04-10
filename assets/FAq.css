@@ -89,5 +89,7 @@
   .faq-page-question-body-inner {
     padding-bottom: 20px;
   }
-
+  faq-page-question-body-inner{
+    color: black;
+  }
   
