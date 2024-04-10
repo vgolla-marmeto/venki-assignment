@@ -1,4 +1,6 @@
-
+/*
+  FAQ page
+*/
 
 .faq-page {
     padding: 60px 0;
@@ -86,11 +88,10 @@
   .faq-page-question-body-inner {
     padding-bottom: 20px;
   }
- 
+ .body-content{
+
+    color: grey;
+ }
  .faq-page-category{
   color: white;
  }
- .body-content{
-
-  color: grey;
-}
