@@ -25,16 +25,7 @@ align-items:center ;
 width: 90%;
 max-height: 400px;
 }
-.image-container{
-width: 50%;
 
-}
-.image-size{
-    width: 100%;
-    height:100%;
-
-
-}
 *{
 color: #fff;
 }
@@ -58,16 +49,16 @@ hsla(0, 0%, 0%, 1);
     background-image:radial-gradient(hsla(303, 90%, 35%, 1, ),hsla(0, 0%, 0%, 1))
 }
 
-@media screen and (max-width:768px){
+@media screen and (min-width:768px){
     .custom-product-content-alignment{
-        flex-direction: column
+        flex-direction: row;
     }
     .content-container{
-        width: 100;
+        width: 50%;
         
     }
     .image-container{
-        width:100%;
+        width:50%;
     }
 }
 
