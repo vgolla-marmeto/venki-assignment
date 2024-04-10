@@ -4,6 +4,11 @@
 
 .faq-page {
     padding: 60px 0;
+    background-color: black;
+
+  }
+  *{
+    color: White;
   }
   
   .faq-page-width {
