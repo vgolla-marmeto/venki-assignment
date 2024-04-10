@@ -4,12 +4,8 @@
 
 .faq-page {
     padding: 60px 0;
-    color: white;
     text-align: center;
 
-  }
-  *{
-    color: White;
   }
   
   .faq-page-width {
@@ -29,7 +25,6 @@
   .faq-page-header h1 {
     font-size: 44px;
     margin-bottom: 10px;
-    color: white;
   }
   
   .faq-page-header-content {
@@ -62,7 +57,6 @@
   .faq-page-question-header h3 {
     font-size: 18px;
     flex: 1;
-    color: white;
   }
   
   .faq-page-question-header svg {
