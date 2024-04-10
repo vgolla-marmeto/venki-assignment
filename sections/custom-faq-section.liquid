@@ -16,7 +16,7 @@
       <div class="faq-page-body">
         {% for block in section.blocks %}
           {% if block.type == 'category' %}
-            <h2 class="faq-page-category" style= "color:white;">{{ block.settings.title }}</h2>
+            <h1 class="faq-page-category" style= "color:white;">{{ block.settings.title }}</h1>
           {% else %}
             <div class="faq-page-question">
               <header class="faq-page-question-header">
