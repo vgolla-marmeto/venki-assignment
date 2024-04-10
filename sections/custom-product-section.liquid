@@ -1,5 +1,5 @@
 
-{{ 'custom-product.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'custom-product.css' | asset_url | stylesheet_tag }} {% endcomment %}
 
 
 {% style %}
@@ -41,10 +41,10 @@ hsla(0, 0%, 0%, 1);
 
 }
 .content-container{
-    width: 100%
+    width: 50%
 }
 .image-container{
-    width: 100%;
+    width:50%;
     background-image:radial-gradient(hsla(303, 90%, 35%, 1, ),hsla(0, 0%, 0%, 1))
 }
 
