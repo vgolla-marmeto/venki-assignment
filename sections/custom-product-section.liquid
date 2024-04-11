@@ -109,7 +109,7 @@ padding:0px;
   {% endif %}
      <div class="custom-product-content-alignment">
         <div class="image-container">
-            <img class="image-size" src={{ section.settings.product.image.src | image_url}} >
+            <img class="image-size" src={{ section.settings.image-section | image_url}} >
         </div>
         <div class="content-container">
           {%- if section.settings.product.vendor != blank -%}
