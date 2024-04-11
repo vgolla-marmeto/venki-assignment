@@ -119,8 +119,8 @@ padding:0px;
               <h1 class="product-heading"> {{ section.settings.Heading }} </h1>
             {%- endif -%}
             <p class="quantity-text">Quantity : 200 ML </p>
-            {%- if section.settings.product.variants.price != blank -%}
-              <p class="price-section">Price : Rs 500 /- </p>
+            {%- if section.settings.price != blank -%}
+              <p class="price-section">Price : Rs {{ section.settings.price }} /- </p>
             {%-  endif -%}
             {%- if section.settings.product_description != blank -%}
             <p class="description"> How it works : <span class="description-color">{{ section.settings.product_description }} <span> </p>
@@ -218,6 +218,13 @@ padding:0px;
             "id": "product_description",
             "label" : "product Description",
             "default": "Introducing Tugain Essentials Anti-Dandruff Shampoo, expertly curated with powerful actives to deliver an effective solution for your hair and scalp needs. Say goodbye to flakes and scalp irritation due to dandruff with a shampoo that truly cares for your hair."
+          },
+          {
+             "type": "text",
+             "label": "Price",
+             "id" : "price",
+             "default" : "500"
+          
           }
     ],
     "presets": [
