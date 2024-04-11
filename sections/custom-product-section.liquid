@@ -112,11 +112,11 @@ padding:0px;
             <img class="image-size" src={{ section.settings.image-section | image_url}} >
         </div>
         <div class="content-container">
-          {%- if section.settings.vendor != blank  -%}
-            <p class="custom-caption">{{ section.settings.vendor }} </p>
+          {%- if section.settings.product.vendor  -%}
+            <p class="custom-caption"> </p>
           {%- endif -%}
-            {%- if section.settings.product_Heading != blank -%}
-              <h1 class="product-heading"> {{ section.settings.product_Heading}} </h1>
+            {%- if section.settings.product.title  -%}
+              <h1 class="product-heading"> {{ section.settings.product.title }} </h1>
             {%- endif -%}
             <p class="quantity-text">Quantity : 200 ML </p>
             {%- if section.settings.product.variants.price != black -%}
@@ -124,10 +124,7 @@ padding:0px;
             {%-  endif -%}
             <p class="description"> How it works : <span class="description-color"> Introducing Tugain Essentials Anti-Dandruff Shampoo, expertly curated with powerful actives to deliver an effective solution for your hair and scalp needs. Say goodbye to flakes and scalp irritation due to dandruff with a shampoo that truly cares for your hair. <span> </p>
 
-            {%  if section.settings.button_label != blank %}   
-             <a href={{ section.settings.button_link }}> <button class="view-button">{{ section.settings.button_label}} </button> </a>
-           {% endif %}
-            
+            <button class="view-button">View Product </button>
         </div>
     </div>
 
@@ -196,7 +193,7 @@ padding:0px;
           },
           {
             "type": "inline_richtext",
-            "id": "product_Heading",
+            "id": "Heading",
             "label": "Product Heading",
             "default": "Tugain Essentials Anti Dandruff Shampoo "
           
@@ -205,20 +202,13 @@ padding:0px;
             "type": "text",
             "id": "button_label",
             "default": "Button label",
-            "label": "View Product"
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_label_1.label",
+            "info": "t:sections.rich-text.blocks.buttons.settings.button_label_1.info"
           },
           {
             "type": "url",
             "id": "button_link",
-            "label": "Button url",
-            "default": "https://gaff44jsp09rnmfz-86700065042.shopifypreview.com/products_preview?preview_key=04f77e141ee2a1f223975378eb3464b1"
-          },
-          {
-            "type": "textarea",
-            "id": "product_description",
-            "label" : "product Description",
-            "default": "Introducing Tugain Essentials Anti-Dandruff Shampoo, expertly curated with powerful actives to deliver an effective solution for your hair and scalp needs. Say goodbye to flakes and scalp irritation due to dandruff with a shampoo that truly cares for your hair."
-          
+            "label": "t:sections.rich-text.blocks.buttons.settings.button_link_1.label"
           }
     ],
     "presets": [

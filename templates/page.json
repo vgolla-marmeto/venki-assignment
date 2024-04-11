@@ -12,10 +12,14 @@
       "type": "custom-product-section",
       "settings": {
         "heading": "Our Products",
-        "product-id": "tugain-essentials-anti-dandruff-shampo",
+        "product": "",
         "background-color": "hsla(0, 0%, 0%, 1)",
-        "media_position": "left",
-        "image-section": "shopify:\/\/shop_images\/OurProduct11.png"
+        "heading_position": "left",
+        "image-section": "shopify:\/\/shop_images\/OurProduct11.png",
+        "vendor": "--- Cipla Health - Anti Dandruff Shampoo",
+        "Heading": "Tugain Essentials Anti Dandruff Shampoo",
+        "button_label": "View Product",
+        "button_link": "shopify:\/\/products\/tugain-essentials-anti-dandruff-shampo"
       }
     },
     "custom_faq_section_7EXL38": {
