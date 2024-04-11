@@ -105,7 +105,7 @@ padding:0px;
 
 <div class="custom-section-bg-container"  style="background-color: {{ section.settings.background-color }}">
   {% if section.settings.heading != black %}
-    <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
+    <h1 class="custom-heading" style="text-align:{{ section.settings.heading_position }}"> {{ section.settings.heading }} </h1>
   {% endif %}
      <div class="custom-product-content-alignment">
         <div class="image-container">
@@ -126,7 +126,7 @@ padding:0px;
             <p class="description"> How it works : <span class="description-color">{{ section.settings.product_description }} <span> </p>
             {% endif %}
             {%  if section.settings.button_label != blank %}   
-             <button class="view-button">{{ section.settings.button_label}} </button>
+             <button class="view-button"><a href={{ section.settings.button_label}} </button>
            {% endif %}
         </div>
     </div>
@@ -171,11 +171,15 @@ padding:0px;
             "options": [
               {
                 "value": "left",
-                "label": "t:sections.featured-product.settings.media_position.options__1.label"
+                "label": "t:sections.featured-product.settings.heading_position.options__1.label"
+              },
+              {
+                "value": "Center",
+                "label": "t:sections.featured-product.settings.heading_position.options__2.label"
               },
               {
                 "value": "right",
-                "label": "t:sections.featured-product.settings.media_position.options__2.label"
+                "label": "t:sections.featured-product.settings.heading_position.options__3.label"
               }
             ],
             "default": "left",
