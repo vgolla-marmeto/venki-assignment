@@ -103,8 +103,10 @@ padding:0px;
 {% endstyle %}
 
 
-<div class="custom-section-bg-container">
-  <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
+<div class="custom-section-bg-container"  style="background-color: {{ section.settings.background-color }}">
+  {% if section.settings.heading != black %}
+    <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
+  {% endif %}
      <div class="custom-product-content-alignment">
         <div class="image-container">
             <img class="image-size" src={{ section.settings.image-section | image_url}} >
