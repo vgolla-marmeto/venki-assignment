@@ -13,7 +13,7 @@
       "settings": {
         "heading": "Our Products",
         "product": "",
-        "background-color": "hsla(0%, 0%, 0%, 1)",
+        "background_color": "",
         "heading_position": "left",
         "image-section": "shopify:\/\/shop_images\/OurProduct11.png",
         "vendor": "--- Cipla Health - Anti Dandruff Shampoo",
