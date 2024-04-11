@@ -112,14 +112,14 @@ padding:0px;
             <img class="image-size" src={{ section.settings.image-section | image_url}} >
         </div>
         <div class="content-container">
-          {%- if section.settings.product.vendor  -%}
-            <p class="custom-caption"> </p>
+          {%- if section.settings.vendor != blank  -%}
+            <p class="custom-caption">{{ section.settings.vendor }} </p>
           {%- endif -%}
-            {%- if section.settings.product.title  -%}
-              <h1 class="product-heading"> {{ section.settings.product.title }} </h1>
+            {%- if section.settings.Heading != blank  -%}
+              <h1 class="product-heading"> {{ section.settings.Heading }} </h1>
             {%- endif -%}
             <p class="quantity-text">Quantity : 200 ML </p>
-            {%- if section.settings.product.variants.price != black -%}
+            {%- if section.settings.product.variants.price != blank -%}
               <p class="price-section">Price : Rs 500 /- </p>
             {%-  endif -%}
             {%- if section.settings.product_description != blank -%}
