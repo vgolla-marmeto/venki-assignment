@@ -10,11 +10,8 @@
 .custiom-section-bg-container{
 
 background-color: hsla(0, 0%, 0%, 1);
+padding:6rem;
 min-height: 100vh;
-padding: 20px 40px;
-display: "flex";
-
-justify-content: "space-between";
 }
 .custom-heading{
 
@@ -23,13 +20,13 @@ size: 48px;
 padding: 20px 0px;
 
 }
+
+*, :after, :before {
+    box-sizing: inherit;
+}
 .custom-product-content-alignment{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items:center ;
-width: 90%;
-gap:20px;
+  display: flex;
+  justify-content: center;
 }
 
 *{
@@ -39,11 +36,10 @@ color: #fff;
     background-color: hsla(0, 0%, 100%, 1);
     height: 51px;
     width: 170px;
-    color:
-hsla(0, 0%, 0%, 1);
-border-radius: 8px;
-font-weight:700;
-font-size:16px;
+    color:hsla(0, 0%, 0%, 1);
+  border-radius: 8px;
+  font-weight:700;
+  font-size:16px;
 
 }
 .product-heading{
@@ -52,12 +48,12 @@ font-size:16px;
 
 }
 .content-container{
-    width: 100%;
-    padding:20px;
+  padding: 5rem;
 }
 .image-container{
-    width:100%;
-    background-image:radial-gradient(hsla(303, 90%, 35%, 0.3), hsla(0, 0%, 0%, 1) )
+  width: 60%;
+  border:none;
+  background-image:radial-gradient(hsla(303, 90%, 35%, 0.3), hsla(0, 0%, 0%, 1) )
 }
 .image-size{
     width:100%;
@@ -83,17 +79,17 @@ font-size:16px;
     font-weight:700;
 }
 
-@media screen and (min-width:768px){
+@media screen and (max-width:1000px){
     .custom-product-content-alignment{
-        flex-direction: row;
-        justify-content:center;
+        flex-direction:column;
     }
     .content-container{
-        width: 50%;
+        width: auto;
+        padding:3rem;
         
     }
     .image-container{
-        width:50%;
+        width:100%;
     }
 }
 
@@ -101,11 +97,9 @@ font-size:16px;
 {% endstyle %}
 
 
-<div class="custiom-section-bg-container">
-    <div>
-    <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
-    <div>
-    <div class="custom-product-content-alignment">
+<div class="custom-section-bg-container">
+  <h1 class="custom-heading"> {{ section.settings.heading }} </h1>
+     <div class="custom-product-content-alignment">
         <div class="image-container">
             <img class="image-size" src={{ section.settings.image-section | image_url}} >
         </div>
@@ -119,10 +113,6 @@ font-size:16px;
             <button class="view-button">View Product </button>
         </div>
     </div>
-
-
-
-
 
 </div>
 
