@@ -1,77 +1,5 @@
 {
   "sections": {
-    "featured_product_6Em8HJ": {
-      "type": "featured-product",
-      "blocks": {
-        "text_7yQtaw": {
-          "type": "text",
-          "settings": {
-            "text": "--- Cipla Health - Anti Dandruff Shampoo",
-            "text_style": "uppercase"
-          }
-        },
-        "title_kR3BLg": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h0"
-          }
-        },
-        "price_dBiqDU": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_e66UdN": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_DeNY6r": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_aBdC9U": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_EdMyLD": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_7yQtaw",
-        "title_kR3BLg",
-        "price_dBiqDU",
-        "variant_picker_e66UdN",
-        "quantity_selector_DeNY6r",
-        "buy_buttons_aBdC9U",
-        "share_EdMyLD"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "tugain-essentials-anti-dandruff-shampo",
-        "color_scheme": "scheme-4",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -84,8 +12,9 @@
       "type": "custom-product-section",
       "settings": {
         "heading": "Our Products",
-        "sec-product": "tugain-essentials-anti-dandruff-shampo",
-        "color_background": "black",
+        "product-id": "tugain-essentials-anti-dandruff-shampo",
+        "background-color": "hsla(0, 0%, 0%, 1)",
+        "media_position": "left",
         "image-section": "shopify:\/\/shop_images\/OurProduct11.png"
       }
     },
@@ -151,7 +80,6 @@
     }
   },
   "order": [
-    "featured_product_6Em8HJ",
     "main",
     "custom_product_section_XrPtYg",
     "custom_faq_section_7EXL38"
