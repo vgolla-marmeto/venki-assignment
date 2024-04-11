@@ -109,7 +109,7 @@ padding:0px;
   {% endif %}
      <div class="custom-product-content-alignment">
         <div class="image-container">
-            <img class="image-size" src={{ section.settings.image-section | image_url}} >
+            <img class="image-size" src={{ section.settings.product_id.featured_image | image_url}} >
         </div>
         <div class="content-container">
             <p class="custom-caption"> --- Cipla Health - Anti Dandruff Shampoo </p>
@@ -148,7 +148,7 @@ padding:0px;
         {
             "type": "product",
             "label": "Product",
-            "id": "product-id"
+            "id": "product_id"
         
         },
         {
