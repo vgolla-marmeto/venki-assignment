@@ -13,13 +13,15 @@
       "settings": {
         "heading": "Our Products",
         "product": "",
-        "background-color": "hsla(0, 0%, 0%, 1)",
+        "background-color": "hsla(250%, 250%, 250%, 1)",
         "heading_position": "left",
         "image-section": "shopify:\/\/shop_images\/OurProduct11.png",
         "vendor": "--- Cipla Health - Anti Dandruff Shampoo",
         "Heading": "Tugain Essentials Anti Dandruff Shampoo",
         "button_label": "View Product",
-        "button_link": ""
+        "button_link": "",
+        "product_description": "Introducing Tugain Essentials Anti-Dandruff Shampoo, expertly curated with powerful actives to deliver an effective solution for your hair and scalp needs. Say goodbye to flakes and scalp irritation due to dandruff with a shampoo that truly cares for your hair.",
+        "price": "500"
       }
     },
     "custom_faq_section_7EXL38": {
