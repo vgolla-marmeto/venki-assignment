@@ -126,7 +126,7 @@ padding:0px;
             <p class="description"> How it works : <span class="description-color">{{ section.settings.product_description }} <span> </p>
             {% endif %}
             {%  if section.settings.button_label != blank %}   
-             <button class="view-button"><a href={{ section.settings.button_link }} target="_blank" > {{ section.settings.button_label}} </a> </button>
+            <a href={{ section.settings.button_link }} target="_blank" > <button class="view-button"> {{ section.settings.button_label}}  </button> </a>
            {% endif %}
         </div>
     </div>
