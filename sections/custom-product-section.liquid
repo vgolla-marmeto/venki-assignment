@@ -42,7 +42,7 @@ padding:0px;
   border-radius: 8px;
   font-weight:700;
   font-size:16px;
-
+ 
 }
 .product-heading{
     color: hsla(310, 100%, 80%, 1);
@@ -104,7 +104,7 @@ padding:0px;
 
 {% endstyle %}
 
-
+{{ section.settings.product }}
 <div class="custom-section-bg-container"  style="background-color: {{ section.settings.background_color }}">
   {% if section.settings.heading != black %}
     <h1 class="custom-heading" style="text-align:{{ section.settings.heading_position }}"> {{ section.settings.heading }} </h1>
