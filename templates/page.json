@@ -12,7 +12,7 @@
       "type": "custom-product-section",
       "settings": {
         "heading": "Our Products",
-        "product": "",
+        "product": "blue-pattern-suit",
         "background_color": "",
         "heading_position": "left",
         "image-section": "shopify:\/\/shop_images\/OurProduct11.png",
