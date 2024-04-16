@@ -519,7 +519,7 @@
     },
     "checkout": {
       "general": {
-        "autocomplete_powered_by_google": "\"\""
+        "autocomplete_powered_by_google": " "
       }
     }
   }
